@@ -2,6 +2,7 @@
 body{
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container{
@@ -46,6 +47,7 @@ padding: 5px;
  font-family: 'Cairo', sans-serif;
  background-color: #0062c4;
  color: rgb(247, 247, 247);
+ -webkit-appearance: none;
 
 }
 
@@ -53,6 +55,7 @@ padding: 5px;
     padding: 10px; 
     border: 0.5px solid rgb(177, 177, 177);
       border-radius: 10px;
+      -webkit-appearance: none;
 }
 
 label{

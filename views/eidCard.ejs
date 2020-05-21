@@ -8,7 +8,8 @@
 
 
 
-<span id="spn" style="font-family: 'Aref Ruqaa', serif;">ا</span>
+<span id="spn" style="font-family: 'Aref Ruqaa', serif;
+font-family: 'Cairo', sans-serif;">ا</span>
 <canvas  id="canvas"width="1000" height="1000"  >
 </canvas>
 
@@ -38,10 +39,10 @@ setTimeout(function(){ }, 3000);
 
          context.drawImage(imageObj, 10, 10);
   
-       context.font = "35pt Aref Ruqaa"; 
+       context.font = "24pt Cairo"; 
      context.fillStyle = "#000000";
      context.textAlign = "center";
-         context.fillText("<%= name %>", 510, 840);
+         context.fillText("<%= name %>", 510, 835);
          mg.src = canvas.toDataURL();
          canvas.remove();
          spn.remove();

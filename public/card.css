@@ -1,0 +1,29 @@
+
+/* @import url(https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Changa:wght@500&display=swap); */
+
+  #mg{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  #container{
+    margin: 20px;
+  }
+
+
+  body,html{
+
+       display: flex;
+       flex-wrap: wrap ;
+      justify-content: center;
+      align-content: center; 
+  
+        height: 100%;
+        width: 100%;
+        margin: 0px; 
+
+     
+
+    
+  }

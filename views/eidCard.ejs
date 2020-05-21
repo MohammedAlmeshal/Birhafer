@@ -1,0 +1,61 @@
+
+<link rel="stylesheet" href="card.css">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Cairo:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<span id="spn" style="font-family: 'Aref Ruqaa', serif;">ا</span>
+<canvas  id="canvas"width="1000" height="1000"  >
+</canvas>
+
+<div id="container">
+  <img id="mg" src="" alt="">
+</div>
+
+
+
+
+<script>
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function(){ }, 3000);
+  var canvas = document.getElementById("canvas");
+  var mg = document.getElementById("mg");
+  var spn = document.getElementById("spn");
+
+     var context = canvas.getContext("2d");
+     var imageObj = new Image();
+     
+   
+   
+     imageObj.onload = function( ){      
+
+         context.drawImage(imageObj, 10, 10);
+  
+       context.font = "35pt Aref Ruqaa"; 
+     context.fillStyle = "#000000";
+     context.textAlign = "center";
+         context.fillText("<%= name %>", 510, 840);
+         mg.src = canvas.toDataURL();
+         canvas.remove();
+         spn.remove();
+     };
+    
+   imageObj.src = "eid_img.jpg"; 
+
+
+
+
+})
+</script>
+
+
+
+
+
